@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <nav class="navbar col-12 p-lg-3 mb-3">
+        <div class="container-fluid">
+            <div class="text-center h1">Weather Dashboard</div>
+        </div>
+    </nav>
+   
+    <div class="d-flex row">
+        
+        <aside class="d-grid gap-2 col-12 col-lg-3 mx-1 justify-content-start">
+            <div>
+                <div>Search For City:</div>
+                <input id="cityInput"></input>
+                <button class="btn col-3 p-0" id="searchButton" type="button">Search</button>
+            </div>
+            <hr>
+            <div id="cityListButton">
+            </div>
+        </aside>
+
+<!-- main body message of city starts -->
+
+        
+        <article class="d-flex row col-12 col-lg-9 justify-content-around">
+                 <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" id="displayCity"></h5>
+                        <h6 id="currentDate"></h6>
+                        <img scr="" id="currentIcon"/>
+                        <ul>
+                            <li id="temp">Temp:</li>
+                            <li id="wind">Wind:</li>
+                            <li id="humidity">Humidity:</li>
+                        </ul>
+                    </div>
+                </div>
+            
+<!-- main body message of city ends -->
+
+
+            <!-- 5 day forcast starts -->
+            <h5>5-Day Forecast:</h5>
+<div class="fiveday">
+        <div class="row justify-content-around gy-1">
+            <div class="card col-12 col-lg-2 p-0">
+                <div class="card-body p-1 cst-card-body">
+                    <h6 class="card-title" id="weather1"></h6>
+                    <img src="" id="img1"/>
+                    <ul>
+                        <li id="temp1">Temp:</li>
+                        <li id="wind1">Wind:</li>
+                        <li id="humidity1">Humidity:</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card col-12 col-lg-2 p-0">
+                <div class="card-body p-1 cst-card-body">
+                    <h6 class="card-title" id="weather2"></h6>
+                    <img src="" id="img2"/>
+                    <ul>
+                        <li id="temp2">Temp:</li>
+                        <li id="wind2">Wind:</li>
+                        <li id="humidity2">Humidity:</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card col-12 col-lg-2 p-0">
+                <div class="card-body p-1 cst-card-body">
+                    <h6 class="card-title" id="weather3"></h6>
+                    <img src="" id="img3"/>
+                    <ul>
+                        <li id="temp3">Temp:</li>
+                        <li id="wind3">Wind:</li>
+                        <li id="humidity3">Humidity:</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card col-12 col-lg-2 p-0">
+                <div class="card-body p-1 cst-card-body">
+                    <h6 class="card-title" id="weather4"></h6>
+                    <img src="" id="img4"/>
+                    <ul>
+                        <li id="temp4">Temp:</li>
+                        <li id="wind4">Wind:</li>
+                        <li id="humidity4">Humidity:</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card col-12 col-lg-2 p-0">
+                <div class="card-body p-1 cst-card-body">
+                    <h6 class="card-title" id="weather5"></h6>
+                    <img src="" id="img5"/>
+                    <ul>
+                        <li id="temp5">Temp:</li>
+                        <li id="wind5">Wind:</li>
+                        <li id="humidity5">Humidity:</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+
+        </article>
+
+    </div>
+<!-- 5 day forecast ends -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
